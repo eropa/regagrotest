@@ -12,8 +12,10 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('mypage1');
 });
+
+Route::post('/mypost','PageController@store')->name('postpage');
 
 Auth::routes();
 
